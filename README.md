@@ -1,3 +1,22 @@
+# Figma plugin using Vue
+
+## Project Setup
+
+* Join [Figma Community Beta](https://forms.gle/5zC8iaAHrH2Erf5q9) program
+* Open profile on Figma Desktop and select Plugins tab
+* Create new Plugin and choose **Name** then choose **With UI & browser APIs**
+* For more information follow [Figma Plugin Guide](#figma-plugin)
+* Copy the **name** and **id** from your original Figma 
+* Plugin's `menifest.json` file that you just created using earlier steps and paste that values in this project
+* Remove the plugin you created from Figma Desktop
+* Create new plugin but this time use **Link existing plugin** option and select `menifest.json` file from this project
+* `ui` in the `manifest.json` is configured to `'UI/dist/index.html'` which holds the output of Vue SPA and directly used by the Figma Plugin.
+* That was the final step now you can follow [Run Figma Plugin](#run-Figma-plugin)
+
+## [UI Setup](UI/README.md)
+
+Check out [instruction to setup Figma Plugin UI](UI/README.md)
+
 ## Figma Plugin
 
 Below are the steps to get your plugin running. You can also find instructions at:
